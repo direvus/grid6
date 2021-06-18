@@ -66,7 +66,6 @@ function createGridLayer(parent) {
         cells = 32;
     }
     for (var i = 0; i < cells; i++) {
-        var step = BASE_STEP / (cols ** level);
         var x0 = origin[0] + (i % cols) * step;
         var y0 = origin[1] + Math.floor(i / cols) * step;
 
@@ -98,3 +97,4 @@ map.addLayer(createGridLayer('RHM'));
 map.addLayer(createGridLayer('RHM3'));
 map.addLayer(createGridLayer('RHM3Y'));
 map.addLayer(createGridLayer('RHM3YE'));
+map.addLayer(createGridLayer('RHM3YE6'));
