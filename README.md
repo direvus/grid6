@@ -15,7 +15,7 @@ focus on producing cell codes that can be communicated without ambiguity.
 There are two ways to refer to a cell:
 
 - compact alphanumeric, e.g. `RHM3YE6`
-- codewords
+- codewords, e.g. `northwest//dwarfing//furor//starcraft//scornful//entranced//strongly`.
 
 In both cases, the words and symbols are carefully chosen so that it would be
 very unlikely to confuse one symbol for another at the same grid level,
