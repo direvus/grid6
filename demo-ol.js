@@ -19,12 +19,15 @@ map.addControl(new ol.control.ScaleLine());
 
 function gridStyle(feature) {
     var name = feature.get('name');
+    var codeword = feature.get('codeword');
     var level = Math.max(0, name.length - 1);
-    var sizes = [48, 24, 16, 12, 10];
+    var sizes = [48, 24, 16, 12, 10, 8];
     var size = 8;
+    var subsize = 6;
 
-    if (level < sizes.length) {
+    if (level < sizes.length - 1) {
         size = sizes[level];
+        subsize = sizes[level + 1]
     }
 
     return [
@@ -38,13 +41,21 @@ function gridStyle(feature) {
                 color: '#999',
                 text: name
             })
+        }),
+        new ol.style.Style({
+            text: new ol.style.Text({
+                font: `${subsize}pt sans-serif`,
+                color: '#999',
+                text: "\n\n\n" + codeword
+            })
         })
     ];
 }
 
-function createQuad(name, x0, y0, x1, y1) {
+function createQuad(name, codeword, x0, y0, x1, y1) {
     return new ol.Feature({
         name: name,
+        codeword: codeword,
         geometry: new ol.geom.Polygon([[
             ol.proj.fromLonLat([x0, y0]),
             ol.proj.fromLonLat([x1, y0]),
@@ -65,6 +76,7 @@ function createGridLayer(parent) {
         cols = 8;
         cells = 32;
     }
+    var step = BASE_STEP / (6 ** level);
     for (var i = 0; i < cells; i++) {
         var x0 = origin[0] + (i % cols) * step;
         var y0 = origin[1] + Math.floor(i / cols) * step;
@@ -80,7 +92,8 @@ function createGridLayer(parent) {
         y1 = Math.min(y1, 80);
 
         var name = parent + CODE[i];
-        source.addFeature(createQuad(name, x0, y0, x1, y1));
+        codeword = WORDS[level][i];
+        source.addFeature(createQuad(name, codeword, x0, y0, x1, y1));
     }
 
     return new ol.layer.Vector({

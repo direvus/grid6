@@ -406,9 +406,28 @@ function getCellFromLatLon(lat, lon, level) {
     // TODO
 }
 
+function getCellCodewordArray(code) {
+    /*
+     * Return an array of code words to identify the given grid cell, to a
+     * maximum of 9 levels of precision.
+     */
+    var result = [];
+    var len = Math.min(code.length, 9);
+
+    for (var i = 0; i < len; i++) {
+        var j = CODE.indexOf(code[i]);
+        if (j < 0) {
+            throw `Invalid code character ${code[i]}.`;
+        }
+        result.push(WORDS[i][j]);
+    }
+    return result;
+}
+
 function getCellCodewords(code) {
     /*
-     * Return an array of code words to identify the given grid cell.
+     * Return a code words string to identify the given grid cell, to a maximum
+     * of 9 levels of precision.
      */
-    // TODO
+    return getCellCodewordArray(code).join('//');
 }

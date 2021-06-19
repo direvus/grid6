@@ -88,7 +88,7 @@ containing the flagpole of Parliament House in Canberra is `RHM3YE6P`.
 
 In order to ensure that a given location can be expressed unamiguously in
 spoken or written form, I have curated a set of reference code words for grid
-system levels one through ten.
+system levels one through nine.
 
 These codewords can be concatenated into a complete grid cell reference at the
 desired precision.
@@ -102,6 +102,14 @@ The objectives of the codeword selection were that:
   morphologically or phonologically.
 - No codeword can be reused at multiple grid levels.
 - Avoid use of offensive codewords.
+
+The string format for Grid6 codewords is all lowercase, with the codewords
+delimited by a double forward slash `//`.  For example, the codeword string for
+cell `RHM3YE6P` is
+`northwest//dwarfing//furor//starcraft//scornful//entranced//strongly//homegrown`.
+
+A complete listing of the codewords for each level can be found at the end of
+this document.
 
 #### Code word method
 
@@ -168,3 +176,352 @@ learner](https://sublexical.phonologist.org/) by Blake Allen & Michael Becker.
 I used the [Irvine Phonotactic Online Dictionary
 (IPhOD)](https://www.iphod.com/) as my corpus of words and phonetic
 transcriptions.
+
+## Codeword listing
+
+### Level 1 codewords
+
+- barnstorm
+- conscripts
+- corkscrew
+- cornfields
+- emu
+- extinct
+- firstborn
+- flatlands
+- foursquare
+- grindstone
+- groundswell
+- haywire
+- humane
+- juju
+- lukewarm
+- northwest
+- outflanked
+- phalanx
+- playhouse
+- rustproof
+- schoolwork
+- scraggly
+- smokescreen
+- spendthrift
+- sportswear
+- starstruck
+- strongest
+- thresholds
+- transfixed
+- werewolf
+- wildflowers
+- windstorm
+
+### Level 2 codewords
+
+- abstracts
+- blindfold
+- breastplate
+- clarksville
+- contexts
+- cornhusks
+- cornwall
+- dwarfing
+- flashcards
+- flintstone
+- foolproof
+- gangplank
+- handclasp
+- hoho
+- hookworm
+- jaywalk
+- landforms
+- longshore
+- maelstrom
+- outflank
+- outstretched
+- purview
+- schoolyard
+- spacecraft
+- splurging
+- standstill
+- strangest
+- strictly
+- swimwear
+- throughway
+- translates
+- withholds
+- woolworth
+- workroom
+- yangtze
+- yourselves
+
+### Level 3 codewords
+
+- airflow
+- backstroke
+- bloodstream
+- bookshelves
+- bridegroom
+- clydesdale
+- crankshaft
+- dreamworld
+- ensconced
+- forsworn
+- freeware
+- furor
+- goldstone
+- groundwork
+- hallmarks
+- hijinks
+- hugely
+- longbow
+- nightstand
+- outskirts
+- postscript
+- rearm
+- ridgeway
+- schoolchild
+- scrounging
+- skinflint
+- springfield
+- staunchest
+- stockholm
+- stonehenge
+- sweatpants
+- therefore
+- wellspring
+- wildlife
+- woodward
+- zeitgeist
+
+### Level 4 codewords
+
+- airfoil
+- betwixt
+- bivalves
+- blowhole
+- campsites
+- cloakroom
+- cornstarch
+- distinct
+- flywheel
+- forecasts
+- foxglove
+- framework
+- goldsmith
+- graybeards
+- helmsman
+- homestretch
+- horseflesh
+- larkspur
+- larynx
+- moonstruck
+- newborns
+- newsgroup
+- oilfields
+- snakelike
+- squinting
+- starcraft
+- strangely
+- strongman
+- succinct
+- thankyou
+- transform
+- unmixed
+- westbound
+- workplace
+- worthwhile
+- yearlong
+
+### Level 5 codewords
+
+- bluejay
+- clotheshorse
+- cloudburst
+- conscript
+- conscript
+- discounts
+- drywall
+- fairbanks
+- fivefold
+- flimflam
+- foxhound
+- goldfinch
+- grassroots
+- hailstorm
+- hugest
+- jetstream
+- landsman
+- malformed
+- northbound
+- poundstone
+- roundtree
+- schoolroom
+- scornful
+- sinkhole
+- springboard
+- sprucing
+- squarely
+- stoneware
+- streetwise
+- strictest
+- unchanged
+- waldorf
+- wildcard
+- windswept
+- wolfram
+- woodrow
+
+### Level 6 codewords
+
+- blankly
+- bratwurst
+- clampdown
+- dextrose
+- entranced
+- farmyard
+- feldspar
+- flagstaff
+- greyhound
+- headstrong
+- homework
+- hornbills
+- inkblot
+- jukebox
+- lifelong
+- makeshift
+- newsflash
+- posthole
+- pretext
+- rebounds
+- scarecrow
+- shortstop
+- skyway
+- snowshoe
+- spillway
+- springtime
+- stagecoach
+- storeroom
+- strangeness
+- subgroups
+- tofu
+- warehoused
+- witchcraft
+- workbench
+- worldwide
+- yourself
+
+### Level 7 codewords
+
+- bankcards
+- blacksmith
+- bracelets
+- churchyard
+- cleveland
+- clockwork
+- culex
+- disgorged
+- firestorm
+- frankly
+- groundhog
+- horseplay
+- jokester
+- legumes
+- longworth
+- mainstream
+- markdowns
+- menswear
+- offspring
+- oomph
+- outflow
+- plainclothes
+- quotient
+- smoothly
+- solvents
+- sprawling
+- stepchild
+- strasburg
+- strongly
+- subtext
+- transverse
+- upstarts
+- washroom
+- wolfman
+- wordsmith
+- wormwood
+
+### Level 8 codewords
+
+- abstract
+- brainchild
+- brickyard
+- conquest
+- cornfield
+- downdraft
+- elkhorn
+- flashpoint
+- frostbite
+- gladstone
+- glimpses
+- goalpost
+- hairspray
+- homegrown
+- huntsman
+- lakefront
+- lingua
+- midwives
+- milkshake
+- nehru
+- ourselves
+- paintbrush
+- ramparts
+- roomful
+- schoolhouse
+- scrivener
+- shortwave
+- snowbound
+- spadework
+- steadfast
+- swordplay
+- townsfolk
+- trowel
+- voodoo
+- wildwood
+- wiretaps
+
+### Level 9 codewords
+
+- adjunct
+- almonds
+- barnyard
+- bluejeans
+- brushfire
+- childlike
+- clearly
+- diverged
+- drumstick
+- eavesdrop
+- firewall
+- folklore
+- frankness
+- glassware
+- henceforth
+- longlegs
+- midstream
+- moving
+- nobler
+- offshore
+- plywood
+- portents
+- profuse
+- rewind
+- rooftree
+- shakespeare
+- slapstick
+- spaceport
+- stockroom
+- streetcar
+- swiftness
+- twiddling
+- upstaged
+- warmest
+- washcloth
+- withstood
