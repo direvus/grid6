@@ -119,8 +119,8 @@ other words in the set.
 Starting with the words that had the highest overall total edit distance, I
 arbitrarily selected a seed word for each grid level, and then selected the
 remaining words by applying an iterative weighted sum of the overall edit
-distance and the edit distance to the words already selected into the grid
-level.
+distance and the edit distance to the words already selected into the current
+and previous grid levels.
 
 ## Comparison to other grid systems
 
