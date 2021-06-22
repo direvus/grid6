@@ -398,18 +398,44 @@ function getCellGeometry(code) {
     ];
 }
 
-function getCellFromLatLon(lat, lon, level) {
+function getCellFromLonLat(lon, lat, level) {
     /*
-     * Return the grid cell that contains a point, given as decimal degress of
-     * latitude and longitude, at the given grid level.
+     * Return the grid cell code that contains a point, given as decimal
+     * degress of latitude and longitude, at the given grid level.
      */
-    // TODO
+    var origin = [-180, -90];
+    var step = 45;
+    var rows = 4;
+    var cols = 8;
+    var x = 0;
+    var y = 0;
+    var index = 0;
+    var result = '';
+    for (var i = 0; i < level; i++) {
+        x = Math.floor((lon - origin[0]) / step);
+        y = Math.floor((lat - origin[1]) / step);
+
+        x = Math.min(Math.max(x, 0), cols);
+        y = Math.min(Math.max(y, 0), rows);
+
+        index = y * cols + x;
+        result += CODE[index];
+
+        if (i == 0) {
+            rows = 6;
+            cols = 6;
+        }
+
+        step = step / cols;
+        origin = getCellOrigin(result);
+    }
+    return result;
 }
 
-function getCellCodewordArray(code) {
+function getCellWordArray(code) {
     /*
-     * Return an array of code words to identify the given grid cell, to a
-     * maximum of 9 levels of precision.
+     * Return an array of words to identify the given grid cell, to a maximum
+     * of 9 levels of precision.
      */
     var result = [];
     var len = Math.min(code.length, 9);
@@ -424,10 +450,10 @@ function getCellCodewordArray(code) {
     return result;
 }
 
-function getCellCodewords(code) {
+function getCellWords(code) {
     /*
-     * Return a code words string to identify the given grid cell, to a maximum
-     * of 9 levels of precision.
+     * Return a word string to identify the given grid cell, to a maximum of 9
+     * levels of precision.
      */
-    return getCellCodewordArray(code).join('//');
+    return getCellWordArray(code).join('//');
 }
